@@ -7,6 +7,8 @@
 #include <cmath>
 #include <Windows.h>
 
+using namespace std;
+
 int main()
 {
 	SetConsoleCP(1251);
@@ -14,8 +16,8 @@ int main()
 
 	double x, R; //Вхідні аргументи
 	double y; //Вихідний аргументи
-	std::cout << "R = "; std::cin >> R;
-	std::cout << "x = "; std::cin >> x;
+	cout << "R = "; cin >> R;
+	cout << "x = "; cin >> x;
 
 	if (x <= -R)
 		y = x + R;
@@ -29,7 +31,7 @@ int main()
 				y = x - 6;
 	
 
-	std::cout << "y = " << y << std::endl;
+	cout << "y = " << y << endl;
 
 	return 0;
 }
